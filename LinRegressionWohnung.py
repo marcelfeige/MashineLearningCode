@@ -18,7 +18,6 @@ print("Intercept: " + str(model.intercept_))
 print("Coef: " + str(model.coef_))
 
 # Vorhersagen durch das Model
-
 min_x = min(df["Quadratmeter"])
 max_x = max(df["Quadratmeter"])
 
