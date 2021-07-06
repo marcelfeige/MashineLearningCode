@@ -23,5 +23,8 @@ max_x = max(df["Quadratmeter"])
 
 predicted = model.predict([[min_x], [max_x]])
 plt.plot([min_x, max_x], predicted, color = "red")
+plt.xlabel("Quadratmeter")
+plt.ylabel("Verkaufspreis")
+
 plt.show()
 
