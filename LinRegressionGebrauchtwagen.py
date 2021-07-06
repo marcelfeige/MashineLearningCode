@@ -27,4 +27,6 @@ print("Preis bei 50.000 km: " + str(p50k))
 
 predicted = model.predict([[min_x], [max_x]])
 plt.plot([min_x, max_x], predicted, color = "red")
+plt.xlabel("Kilometer")
+plt.ylabel("Preis")
 plt.show()
