@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import RepeatedKFold
 
 df = pd.read_csv("D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien"
                  "\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
@@ -34,5 +35,11 @@ for train_index, test_index in kf.split(X):
 scores = cross_val_score(LinearRegression(), X, Y, cv = KFold(n_splits = 6))
 print(scores)
 print("Score Mittelwert (Kuzrschreibweise): " + str(np.mean(scores)))
+print("---------")
+
+# Repeatet
+scoresRep = cross_val_score(LinearRegression(), X, Y, cv = RepeatedKFold(n_repeats = 10))
+print(scores)
+print("Score Mittelwert (Repeated): " + str(np.mean(scoresRep)))
 
 
