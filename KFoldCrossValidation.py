@@ -1,7 +1,8 @@
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import KFold
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import cross_val_score
 
 df = pd.read_csv("D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien"
                  "\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
@@ -28,5 +29,10 @@ for train_index, test_index in kf.split(X):
     score = model.score(X_test, y_test)
     print("Score: " + str(score))
     print("---------")
+
+# Kurzschreibweise
+scores = cross_val_score(LinearRegression(), X, Y, cv = KFold(n_splits = 6))
+print(scores)
+print("Score Mittelwert (Kuzrschreibweise): " + str(np.mean(scores)))
 
 
