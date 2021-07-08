@@ -14,7 +14,7 @@ X = df[["age", "interest"]].values
 
 y = df["success"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 0, test_size = 0.25)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 4, test_size = 0.25)
 
 param_range = np.array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
 
