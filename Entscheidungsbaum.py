@@ -10,20 +10,9 @@ from sklearn.tree import plot_tree
 df = pd.read_csv(
     "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
 
-# Wenn du ein paar Spalten vorab aus den Daten entfernen
-# df = df.drop("Spaltenname", axis = 1)
-
-# Wenn du eine kategorische Variable in mehrere Spalten umwandeln
-# möchtest, kannst du das mit folgendem Code tun:
-# df = pd.get_dummies(df, columns = ["Spaltenname"])
-
 df.head()
 
-# Welche Spalten sollen zur Vorhersage verwendet werden
 X = df[["age", "interest"]].values
-
-# Oder: Die Spalte "success" soll nicht zur Vorhersage verwendet werden:
-# X = df.drop("success", axis = 1).values
 
 y = df["success"].values
 
