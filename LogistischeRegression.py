@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
 
 df = pd.read_csv(
     "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 21 - logitische regression\classification.csv")
@@ -24,3 +25,9 @@ plt.xlabel("Alter")
 plt.ylabel("Interesse")
 plt.show()
 
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
+y_predicted = model.predict(X_test)
+score = model.score(X_test, y_test)
+print("Score: " + str(score))
