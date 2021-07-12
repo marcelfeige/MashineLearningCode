@@ -4,8 +4,7 @@ from sklearn.tree import DecisionTreeClassifier
 import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 27 - Projekt Pilze (Entscheidungsbaum)\mushrooms.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 27 - Projekt Pilze (Entscheidungsbaum)\mushrooms.csv")
 
 # Wenn du ein paar Spalten vorab aus den Daten entfernen
 # df = df.drop("Spaltenname", axis = 1)

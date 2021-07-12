@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 df = pd.read_csv(
-    "D:\\Eigene Datein\\eLearning Kurse\\Machine Learning\\Kursmaterialien\\Abschnitt 12 - Polynomialle Regression\\fields.csv")
+    "..\\Kursmaterialien\\Abschnitt 12 - Polynomialle Regression\\fields.csv")
 
 print(df.head())
 

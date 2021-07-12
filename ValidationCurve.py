@@ -5,8 +5,7 @@ from sklearn.model_selection import validation_curve
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
 
 df.head()
 

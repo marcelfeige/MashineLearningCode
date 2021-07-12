@@ -5,9 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 25 - Iris Dataset\iris.csv"
-)
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 25 - Iris Dataset\iris.csv")
 
 print(df.head())
 

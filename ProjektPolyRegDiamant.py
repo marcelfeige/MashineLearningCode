@@ -4,8 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 13 - Praxis Polynomiale Regression\diamonds.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 13 - Praxis Polynomiale Regression\diamonds.csv")
 
 print(df.head())
 

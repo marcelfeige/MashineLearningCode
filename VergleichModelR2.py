@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv(
-    "D:\Eigene Datein\\eLearning Kurse\\Machine Learning\Kursmaterialien\\"
-    "Abschnitt 06 - Projekt Lineare Regression\\autos_prepared.csv")
+df = pd.read_csv("..\Kursmaterialien\\Abschnitt 06 - Projekt Lineare Regression\\autos_prepared.csv")
 
 scores_km_price = []
 scores_ps_price = []

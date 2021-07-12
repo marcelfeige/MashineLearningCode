@@ -4,7 +4,7 @@ from helper import plot_classifier
 from sklearn.naive_bayes import GaussianNB
 
 df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
+    "..\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
 
 df.head()
 

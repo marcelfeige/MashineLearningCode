@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 
 df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 21 - logitische regression\classification.csv")
+    "..\Kursmaterialien\Abschnitt 21 - logitische regression\classification.csv")
 
 print(df.head())
 

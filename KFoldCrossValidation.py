@@ -5,8 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RepeatedKFold
 
-df = pd.read_csv("D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien"
-                 "\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
 
 X = df[["Gewinn", "Quadratmeter"]].values
 Y = df[["Preis in Mio"]].values

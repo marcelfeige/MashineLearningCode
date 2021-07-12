@@ -3,8 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien"
-                 "\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
 
 
 df = pd.get_dummies(df, columns = ["Stadt"])

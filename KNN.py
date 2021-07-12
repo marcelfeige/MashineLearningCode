@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from helper import plot_classifier
 
 df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 21 - logitische regression\classification.csv")
+    "..\Kursmaterialien\Abschnitt 21 - logitische regression\classification.csv")
 
 print(df.head())
 

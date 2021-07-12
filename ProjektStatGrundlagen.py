@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 19 - Projekt Statistische Grundlagen\sf_salaries.csv",
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 19 - Projekt Statistische Grundlagen\sf_salaries.csv",
     low_memory = False)
 
 #print(df.head())

@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
 
 df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
+    "..\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
 
 df.head()
 

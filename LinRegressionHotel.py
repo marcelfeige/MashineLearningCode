@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien"
+df = pd.read_csv("..\Kursmaterialien"
                  "\Abschnitt 08 - Lineare Regression mit mehreren Variablen\hotels.csv")
 
 print(df.head())

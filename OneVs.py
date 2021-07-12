@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.multiclass import OneVsOneClassifier
 
 df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 23 - Mehrere Klassen\\foods.csv")
+    "..\Kursmaterialien\Abschnitt 23 - Mehrere Klassen\\foods.csv")
 print(df.head())
 
 X = df[["energy_100g", "fat_100g", "carbohydrates_100g", "sugars_100g", "proteins_100g"]].values

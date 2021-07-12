@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
 df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning"
-    "\Kursmaterialien\Abschnitt 05 - Lineare Regression\wohnungspreise.csv")
+    "..\Kursmaterialien\Abschnitt 05 - Lineare Regression\wohnungspreise.csv")
 
 
 plt.scatter(df["Quadratmeter"], df["Verkaufspreis"])

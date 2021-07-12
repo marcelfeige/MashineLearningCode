@@ -4,8 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from helper import plot_classifier
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 22 - Brustkrebs erkennen\cancer.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 22 - Brustkrebs erkennen\cancer.csv")
 
 # Wenn du ein paar Spalten vorab aus den Daten entfernen
 # df = df.drop("Spaltenname", axis = 1)

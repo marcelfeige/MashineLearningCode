@@ -5,8 +5,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-df = pd.read_csv(
-    "D:\Eigene Datein\eLearning Kurse\Machine Learning\Kursmaterialien\Abschnitt 31 - Projekt Spam-Filter\spam.csv")
+df = pd.read_csv("..\Kursmaterialien\Abschnitt 31 - Projekt Spam-Filter\spam.csv")
 
 print(df.head())
 
