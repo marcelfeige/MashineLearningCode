@@ -3,15 +3,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from helper import plot_classifier
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_curve, roc_auc_score
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("..\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
-
-# Wenn du ein paar Spalten vorab aus den Daten entfernen
-# df = df.drop("Spaltenname", axis = 1)
-
-# Wenn du eine kategorische Variable in mehrere Spalten umwandeln
-# möchtest, kannst du das mit folgendem Code tun:
-# df = pd.get_dummies(df, columns = ["Spaltenname"])
 
 df.head()
 
@@ -36,9 +32,19 @@ model.fit(X_train, y_train)
 
 print(model.score(X_test, y_test))
 
+y_test_pred = model.predict_proba(X_test)[:, 1]
+
+fpr, tpr, thresholds = roc_curve(y_test, y_test_pred)
+
+plt.plot(fpr,tpr)
+plt.show()
+
+rocauc_score = roc_auc_score(y_test, y_test_pred)
+print(rocauc_score)
+
 # Trainings-Daten plotten
-plot_classifier(model, X_train, y_train, proba = False, xlabel = "Alter", ylabel = "Interesse")
+#plot_classifier(model, X_train, y_train, proba = False, xlabel = "Alter", ylabel = "Interesse")
 
 # Testdaten plotten
 
-plot_classifier(model, X_test, y_test, proba = False, xlabel = "Alter", ylabel = "Interesse")
+#plot_classifier(model, X_test, y_test, proba = False, xlabel = "Alter", ylabel = "Interesse")

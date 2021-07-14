@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from helper import plot_classifier
+from sklearn.metrics import confusion_matrix
 
 df = pd.read_csv("..\Kursmaterialien\Abschnitt 26 - Entscheidungsbaeume\classification.csv")
 
@@ -36,9 +37,16 @@ model.fit(X_train, y_train)
 
 print(model.score(X_test, y_test))
 
+y_test_pred = model.predict(X_test)
+
+print("[[richtig negativ, falsch positiv]\n [falsch negativ, richtig positiv]")
+
+con_mat = confusion_matrix(y_test, y_test_pred)
+print(con_mat)
+
 # Trainings-Daten plotten
-plot_classifier(model, X_train, y_train, proba = False, xlabel = "Alter", ylabel = "Interesse")
+#plot_classifier(model, X_train, y_train, proba = False, xlabel = "Alter", ylabel = "Interesse")
 
 # Testdaten plotten
 
-plot_classifier(model, X_test, y_test, proba = False, xlabel = "Alter", ylabel = "Interesse")
+#plot_classifier(model, X_test, y_test, proba = False, xlabel = "Alter", ylabel = "Interesse")
